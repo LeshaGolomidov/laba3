@@ -1,0 +1,5 @@
+import re
+
+input_string = input("Введите строку: ")
+reg = r'[A-ZА-Я]'
+uppercase_letters = re.findall(reg, input_string)
