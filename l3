@@ -3,3 +3,9 @@ import re
 input_string = input("Введите строку: ")
 reg = r'[A-ZА-Я]'
 uppercase_letters = re.findall(reg, input_string)
+if uppercase_letters:
+    print("Прописные буквы в строке:")
+    for letter in uppercase_letters:
+        print(letter)
+else:
+    print("Прописных букв не найдено")
